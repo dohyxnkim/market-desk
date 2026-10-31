@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Desk</title>
+<meta name="description" content="국내 주식시장 대시보드 — 지수, 섹터(WICS), 수급, RS 점수, 스크리너">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css?v=719943c0">
+<script src="echarts.min.js?v=ef12c5c6"></script>
+<script src="stockchart.js?v=5847681e"></script>
+<script src="journal.js?v=b3d18292"></script>
+<script src="app.js?v=f92cbbae" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#market"><img src="icon.svg" alt="" width="26" height="26"><span>Market Desk</span></a>
+  <nav id="nav"></nav>
+  <div class="updated" id="updated">불러오는 중…</div>
+</header>
+<div class="wrap">
+  <div class="ticker" id="ticker"></div>
+  <main id="view"><div class="loading">불러오는 중…</div></main>
+  <footer class="foot">
+    <span>데이터: KRX · 키움증권 · 한국은행 ECOS · 통계청 KOSIS · FRED · OpenDART · WICS(FnGuide). 투자 판단의 책임은 본인에게 있습니다.</span>
+    <span id="foot-meta"></span>
+  </footer>
+</div>
+</body>
+</html>
